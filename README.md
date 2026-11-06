@@ -8,6 +8,8 @@
 
 > ⚠️ **Beta** · 🇮🇹 Versione di test: può avere difetti, non usarla come unico sistema. · 🇬🇧 Test version: expect rough edges, don't use it as your only system.
 
+![Neofetch on Desktop](docs/images/Neofetch)
+
 </div>
 
 ---
@@ -94,7 +96,7 @@ Dispositivo: _Thinkpad T14 Gen 1 20S1 con macOS Sonoma 14.7.1_ · Le prestazioni
 | Ambiente | Live | Installazione | Strumenti VM | Note |
 |---|---|---|---|---|
 | *VirtualBox* | | | | |
-| *VMware* | si | si | si | *Testato su VMWare Fusion 26H2u1 per macOS.* |
+| *VMware* | Funziona | Funziona | Funziona | *Testato su VMWare Fusion 26H2u1 per macOS.* |
 | *UTM (Apple Silicon)* | | | | |
 | *Bare metal* | | | | |
 
@@ -236,7 +238,7 @@ Device: ThinkPad T14 Gen 1 running macOS Sonoma 14.7.1 · YMMV.
 | Environment | Live | Install | VM tools | Notes |
 |---|---|---|---|---|
 | *VirtualBox* | | | | |
-| *VMware* | yes | yes | yes | *tested on VMWare Fusion 26H2u1 for macOS.* |
+| *VMware* | Works | Works | Works | *tested on VMWare Fusion 26H2u1 for macOS.* |
 | *UTM (Apple Silicon)* | | | | |
 | *Bare metal* | | | | |
 
