@@ -64,18 +64,18 @@
 ## 3. Installazione del sistema / Installing the system
 
 Dalla sessione live, doppio clic su **Installa PoliOS 26** 
-![Desktop](images/Desktop).
+![Desktop](images/Desktop.png).
 
 1. Lingua / Language — 
-![Lingua](images/Benvenuti) ![Language](images/Welcome)
+![Lingua](images/Benvenuti.png) ![Language](images/Welcome.png)
 2. Layout tastiera / Keyboard layout — 
-![Tastiera](images/Tastiera) ![Keyboard](images/Keyboard)
+![Tastiera](images/Tastiera.png) ![Keyboard](images/Keyboard.png)
 3. Aggiornamenti e codec multimediali / Updates and multimedia codecs —  
-![Multimediali](images/Codec) ![Multimedia](images/Codecs)
+![Multimediali](images/Codec.png) ![Multimedia](images/Codecs.png)
 > NOTA: Particolarmente importante per chi usa una VM / Particularly important for VM users.
 4. Tipo di installazione / Installation type — 
    - **Cancella disco e installa / Erase disk and install** 
-     ![Installazione](images/Installazione) ![Installation](images/Installation)
+     ![Installazione](images/Installazione.png) ![Installation](images/Installation.png)
    - **Accanto a un altro sistema (dual boot) / Alongside another OS** — ⚠️ backup prima / back up first — (Non spiegato in questa guida / Not explained in this guide)
 
 5. Fuso orario / Time zone (Europe/Rome) 
@@ -89,11 +89,11 @@ Dalla sessione live, doppio clic su **Installa PoliOS 26**
 1. Al primo accesso si apre **PoliOS Welcome** / opens at first login — 
 2. **Pagina Wi-Fi** (solo se c'è un adattatore Wi-Fi) / (only with a Wi-Fi adapter):
    - Nome utente = **codice persona** (`@polimi.it` si aggiunge da solo) / (adds `@polimi.it` automatically) -
-![WiFi - IT](images/PoliFIIT) ![WiFI - EN](images/PoliFIEN)
+![WiFi - IT](images/PoliFIIT.png) ![WiFI - EN](images/PoliFIEN.png)
    - Password Polimi · opzione Ethernet 802.1X solo per le prese cablate del campus / only for campus wired ports
    - Puoi **saltare** / You can **skip** — 
 3. **Pagina corsi** / Courses page: spunta i tuoi corsi → **Installa** / tick your courses → **Install** — 
-![CORSI](images/PoliOSWelcomeIT) ![COURSES](images/PoliOSWelcomeEN)
+![CORSI](images/PoliOSWelcomeIT.png) ![COURSES](images/PoliOSWelcomeEN.png)
    - Passa il mouse su un corso per vedere i pacchetti / hover a course to see its packages
    - Pulsante **English / Italiano** in basso a sinistra / language button bottom left 
    - Serve Internet / Internet is required

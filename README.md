@@ -8,7 +8,7 @@
 
 > ⚠️ **Beta** · 🇮🇹 Versione di test: può avere difetti, non usarla come unico sistema. · 🇬🇧 Test version: expect rough edges, don't use it as your only system.
 
-![Neofetch on Desktop](docs/images/Neofetch)
+![Neofetch on Desktop](docs/images/Neofetch.png) 
 
 </div>
 
