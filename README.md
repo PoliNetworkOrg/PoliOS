@@ -46,7 +46,7 @@ Puoi riaprire la procedura in qualsiasi momento dal menu ("PoliOS Welcome"), per
 | Terminale | Konsole, `git`, `curl`, `wget`, `neofetch` |
 | Browser e studio | Firefox, **WeBeep Sync** ([toto04/webeep-sync](https://github.com/toto04/webeep-sync)) |
 | Sistema | Flatpak, stampa (CUPS), plugin VPN, firmware e microcode |
-| Per corso | scelto da te in PoliOS Welcome (vedi [`courses.conf`](polios-cubic/welcome/courses.conf)) |
+| Per corso | scelto da te in PoliOS Welcome ([motocarro/polios-welcome](https://github.com/motocarro/polios-welcome)) (vedi [`courses.conf`](polios-cubic/welcome/courses.conf)) |
 
 Software proprietario come Vivado **non** è incluso (non è ridistribuibile). Alcune app di Linux Mint (per esempio il gestore degli aggiornamenti) possono essere ancora presenti.
 
@@ -186,7 +186,7 @@ You can reopen the wizard any time from the menu ("PoliOS Welcome"), for example
 | Terminal | Konsole, `git`, `curl`, `wget`, `neofetch` |
 | Browser and study | Firefox, **WeBeep Sync** ([toto04/webeep-sync](https://github.com/toto04/webeep-sync)) |
 | System | Flatpak, printing (CUPS), VPN plugins, firmware and microcode |
-| Per course | chosen by you in PoliOS Welcome (see [`courses.conf`](polios-cubic/welcome/courses.conf)) |
+| Per course | chosen by you in PoliOS Welcome ([motocarro/polios-welcome](https://github.com/motocarro/polios-welcome)) (see [`courses.conf`](polios-cubic/welcome/courses.conf)) |
 
 Proprietary software such as Vivado is **not** included (it can't be redistributed). Some Linux Mint apps (for example the update manager) may still be present.
 
