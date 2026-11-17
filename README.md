@@ -6,7 +6,7 @@
 
 *Linux Mint + KDE Plasma per gli studenti del Politecnico di Milano · Linux Mint + KDE Plasma for Politecnico di Milano students*
 
-> ⚠️ **Beta** · 🇮🇹 Versione di test: può avere difetti, non usarla come unico sistema. · 🇬🇧 Test version: expect rough edges, don't use it as your only system.
+> ⚠️  · 🇮🇹 Nonostante sia una versione stabile, potrebbe avere difetti. · 🇬🇧 Even though it's a stable release, expect rough edges.
 
 ![Neofetch on Desktop](docs/images/Neofetch.png) 
 
@@ -23,7 +23,7 @@
 PoliOS è una distribuzione Linux pensata per chi al Politecnico di Milano ha corsi che richiedono Linux ma non vuole perdere tempo a configurarlo. È basata su **Linux Mint 22.3** (che a sua volta si basa su Ubuntu 24.04), con **KDE Plasma** al posto di Cinnamon: un desktop con barra delle applicazioni e menu di avvio, familiare a chi viene da Windows.
 
 - **Leggera e senza fronzoli**: niente snap; le app extra si installano con Flatpak (o con `apt`, se sai usare il terminale).
-- **Compatibile con le istruzioni dei corsi**: usa `apt` come Ubuntu/Debian, quindi i comandi dei prof funzionano così come sono, e per i problemi basta cercare "`<problema>` Ubuntu".
+- **Compatibile con le istruzioni dei corsi**: usa `apt` come Ubuntu/Debian, quindi i comandi dei prof funzionano così come sono, e per i problemi basta cercare "`<problema>` Ubuntu" su Google.
 - **Pronta all'uso**: italiano di default, Wi-Fi del Politecnico configurabile al primo avvio, software dei corsi installabile con un clic.
 - **Pensata per le macchine virtuali** (VirtualBox, VMware, UTM) **e per il dual boot**.
 
@@ -53,13 +53,13 @@ Software proprietario come Vivado **non** è incluso (non è ridistribuibile). A
 ## A chi è rivolta (e a chi no)
 
 **Per**: studenti che hanno bisogno di Linux per i corsi, soprattutto in macchina virtuale o in dual boot.
-**Non per**: chi usa software senza versione Linux (se il tuo corso lo richiede, PoliOS non può aiutarti); chi cerca un sistema generico per tutti i giorni (come Kali, serve a svolgere un lavoro preciso); chi è già soddisfatto di WSL.
+**Non per**: chi usa software senza versione Linux (se il tuo corso lo richiede, PoliOS non può aiutarti); chi cerca un sistema generico per tutti i giorni; chi è già soddisfatto di WSL.
 
-## Stato
+## Stato (Stable Release)
 
 ### Cosa funziona
 
-- Avvio live e installazione completa
+- Avvio live e installazione completa, anche in dual boot e con cifratura del disco
 - Desktop PoliOS (pannello, sfondo, schermata di login, schermata di avvio)
 - PoliOS Welcome in italiano e inglese, con elenco corsi
 - WeBeep Sync, Konsole e le app elencate sopra
@@ -68,12 +68,10 @@ Software proprietario come Vivado **non** è incluso (non è ridistribuibile). A
 
 <!-- TODO: aggiornare questa lista man mano che le cose vengono verificate! -->
 - Configurazione Wi-Fi `polimi-protected` su una rete reale
-- Installazione su hardware reale e in dual boot (vedi tabella dei test)
-- Aggiornamento online dell'elenco dei corsi
 
 ### Limitazioni note
 
-- **Solo amd64**. Su Mac Apple Silicon e iPad, UTM può solo *emulare* l'immagine:funziona eh, è molto lenta.
+- **Solo amd64**. Su Mac Apple Silicon e iPad, UTM può solo *emulare* l'immagine: funziona eh, è molto lenta.
 - **Plasma 5.27 e sessione X11** (è la versione di Ubuntu 24.04, base di Mint 22.3).
 - Alcune app di Linux Mint (GTK) restano nel sistema e potrebbero non seguire il tema di KDE.
 
@@ -81,9 +79,9 @@ Software proprietario come Vivado **non** è incluso (non è ridistribuibile). A
 
 | Hardware | Richiesto | Consigliato |
 |---|---|---|
-| CPU | 2 core / 2 thread, 64 bit | 4 core / 4 thread, 64 bit |
+| CPU | 2 core / 2 thread, 64 bit | 4 core / 8 thread, 64 bit |
 | RAM | 4 GiB | 16 GiB |
-| Spazio su disco | 24 GiB | 64 GiB |
+| Spazio su disco | 24 GiB | 128 GiB |
 | Schermo | uno schermo | 1920×1080 |
 | GPU | non richiesta | AMD Radeon qualsiasi |
 | USB (solo bare metal) | 1× USB-A 2.0 | 1× USB 3.0 (A o C) |
@@ -95,15 +93,15 @@ Dispositivo: _Thinkpad T14 Gen 1 20S1 con macOS Sonoma 14.7.1_ · Le prestazioni
 
 | Ambiente | Live | Installazione | Strumenti VM | Note |
 |---|---|---|---|---|
-| *VirtualBox* | | | | |
-| *VMware* | Funziona | Funziona | Funziona | *Testato su VMWare Fusion 26H2u1 per macOS.* |
+| *VirtualBox* | Funziona | Funziona | Funziona* |* *Drag&Drop potrebbe non funzionare* |
+| *VMware* | Funziona | Funziona | Funziona | *Testato su VMWare Fusion 26H2u1 per macOS* |
 | *UTM (Apple Silicon)* | | | | |
-| *Bare metal* | | | | |
+| *Bare metal* | Funziona | Funziona* | - | * *l'installer potrebbe essere lento: dipende dall'hardware* |
 
 ## Download e installazione
 
-1. Scarica l'ultima ISO: **[link](https://youtube.com/watch?v=dQw4w9WgXcQ)** (circa 3,4 GB). Controlla la somma di controllo SHA-256: `88804f233078954519ba87cbe79d96439e3e8a6010fb4358a7ff7707c015c056`.
-   *(L'ISO supera il limite di 2 GiB di GitHub Releases: è ospitata altrove. In ogni release trovi link e checksum.)*
+1. Scarica l'ultima ISO: **[link](https://pub-37dc79b217854c9094cb9505dc29cca7.r2.dev)** (circa 3,4 GB). Controlla la somma di controllo SHA-256: `88804f233078954519ba87cbe79d96439e3e8a6010fb4358a7ff7707c015c056`.
+   *(L'ISO supera il limite di 2 GiB di GitHub Releases: è ospitata su CloudFlare. In ogni release trovi link e checksum.)*
 2. Segui la guida passo passo: **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 In breve:
@@ -147,7 +145,7 @@ Progetto ospitato da [PoliNetwork](https://github.com/PoliNetworkOrg), realizzat
 ## Licenza e marchi
 
 - Codice e configurazioni del progetto: **GNU GPL-3.0** (vedi [LICENSE](LICENSE)).
-- PoliOS **non è un prodotto ufficiale** del Politecnico di Milano, di Linux Mint, Canonical/Ubuntu, KDE o Google, e non è approvato da essi. <!-- TODO: conferma con PoliNetwork la formula sul Politecnico -->
+- PoliOS **non è un prodotto ufficiale** del Politecnico di Milano, di Linux Mint, Canonical/Ubuntu, KDE o Google, e non è approvato da essi.
   "Linux Mint" è un marchio di Linux Mint; "Ubuntu" è un marchio di Canonical Ltd.; "KDE" e "Plasma" sono marchi di KDE e.V.; "Google Chrome" è un marchio di Google LLC. Nome e logo PoliNetwork appartengono a PoliNetwork.
 - Il software incluso resta sotto le proprie licenze, tra cui: WeBeep Sync (GPL-3.0), tema di icone WhiteSur (GPL-3.0), tema di avvio basato su Plymouth (GPL-2.0+), PyQt5 usato da PoliOS Welcome (GPL-3.0). Il software proprietario (per esempio Vivado, Google Chrome) non viene ridistribuito nell'ISO.
 - Il certificato `cachain_geant_harica.pem` (catena di certificati pubblici per il Wi-Fi del Politecnico) è incluso.
@@ -163,8 +161,8 @@ Progetto ospitato da [PoliNetwork](https://github.com/PoliNetworkOrg), realizzat
 PoliOS is a Linux distribution for students at Politecnico di Milano whose courses need Linux and who don't want to spend time setting it up. It's based on **Linux Mint 22.3** (itself based on Ubuntu 24.04), with **KDE Plasma** instead of Cinnamon: a desktop with a taskbar and a start menu, familiar to Windows users.
 
 - **Light and no-nonsense**: no snaps; extra apps come from Flatpak (or `apt`, if you know the terminal).
-- **Compatible with course instructions**: it uses `apt` like Ubuntu/Debian, so your professors' commands work as written, and for problems you can search "`<problem>` Ubuntu".
-- **Ready to use**: Italian by default, Polimi Wi-Fi set up at first boot, course software installable in one click.
+- **Compatible with course instructions**: it uses `apt` like Ubuntu/Debian, so your professors' commands work as written, and for problems you can search "`<problem>` Ubuntu" on Google.
+- **Ready to use**: Italian by default (English is officially supported!), Polimi Wi-Fi set up at first boot, course software installable in one click.
 - **Built for virtual machines** (VirtualBox, VMware, UTM) **and dual boot**.
 
 ## How it works
@@ -193,13 +191,13 @@ Proprietary software such as Vivado is **not** included (it can't be redistribut
 ## Who is it for (and who isn't it)
 
 **For**: students who need Linux for their courses, especially in a virtual machine or dual boot.
-**Not for**: people using software with no Linux version (if your course needs it, PoliOS can't help); people looking for a general-purpose everyday system (like Kali, it's meant to get specific work done); people already happy with WSL.
+**Not for**: people using software with no Linux version (if your course needs it, PoliOS can't help); people looking for a general-purpose everyday system; people already happy with WSL.
 
-## Status (beta)
+## Status (Stable Release)
 
 ### What works
 
-- Live boot and full installation
+- Live boot and full installation, even dual boot with disk encryption
 - PoliOS desktop (panel, wallpaper, login screen, boot splash)
 - PoliOS Welcome in Italian and English, with the course list
 - WeBeep Sync, Konsole and the apps listed above
@@ -208,8 +206,6 @@ Proprietary software such as Vivado is **not** included (it can't be redistribut
 
 <!-- TODO: keep this list in sync with the Italian one -->
 - `polimi-protected` Wi-Fi setup on a real network
-- Installation on real hardware and in dual boot (see the test table)
-- Online course list update 
 
 ### Known limitations
 
@@ -223,9 +219,9 @@ Proprietary software such as Vivado is **not** included (it can't be redistribut
 <!-- TODO: keep in sync with the Italian one -->
 | Hardware | Required | Recommended |
 |---|---|---|
-| CPU | 2 cores / 2 threads, 64-bit | 4 cores / 4 threads, 64-bit |
-| RAM | 4 GiB | 8 GiB |
-| Disk space | 24 GiB | 64 GiB |
+| CPU | 2 cores / 2 threads, 64-bit | 4 cores / 8 threads, 64-bit |
+| RAM | 4 GiB | 16 GiB |
+| Disk space | 24 GiB | 128 GiB |
 | Display | a display | 1920×1080 |
 | GPU | not required | AMD Radeon |
 | USB (bare metal only) | 1× USB-A 2.0 | 1× USB 3.0 (A or C) |
@@ -237,15 +233,15 @@ Device: ThinkPad T14 Gen 1 running macOS Sonoma 14.7.1 · YMMV.
 
 | Environment | Live | Install | VM tools | Notes |
 |---|---|---|---|---|
-| *VirtualBox* | | | | |
-| *VMware* | Works | Works | Works | *tested on VMWare Fusion 26H2u1 for macOS.* |
+| *VirtualBox* | Works | Works | Works* | * *Drag&Drop may not work* |
+| *VMware* | Works | Works | Works | *tested on VMWare Fusion 26H2u1 for macOS* |
 | *UTM (Apple Silicon)* | | | | |
-| *Bare metal* | | | | |
+| *Bare metal* | Works* | Works | - | * *installer may be slow depending on your hardware configuration* |
 
 ## Download and install
 
-1. Download the latest ISO: **[link](polinetwork.org)** (about 3,4 GB). Check the SHA-256 checksum: `88804f233078954519ba87cbe79d96439e3e8a6010fb4358a7ff7707c015c056`.
-   *(The ISO exceeds GitHub Releases' 2 GiB limit, so it is hosted elsewhere. Each release has the link and checksum.)*
+1. Download the latest ISO: **[link](https://pub-37dc79b217854c9094cb9505dc29cca7.r2.dev)** (about 3,4 GB). Check the SHA-256 checksum: `88804f233078954519ba87cbe79d96439e3e8a6010fb4358a7ff7707c015c056`.
+   *(The ISO exceeds GitHub Releases' 2 GiB limit, so it is hosted on Cloudflare. Each release has the link and checksum.)*
 2. Follow the step-by-step guide: **[docs/INSTALL.md](docs/INSTALL.md)**.
 
 In short:
@@ -281,7 +277,7 @@ Project hosted by [PoliNetwork](https://github.com/PoliNetworkOrg), made by stud
 ## License and trademarks
 
 - Project code and configuration: **GNU GPL-3.0** (see [LICENSE](LICENSE)).
-- PoliOS is **not an official product** of Politecnico di Milano, Linux Mint, Canonical/Ubuntu, KDE or Google, and is not endorsed by them. <!-- TODO: confirm the wording about the Politecnico with PoliNetwork -->
+- PoliOS is **not an official product** of Politecnico di Milano, Linux Mint, Canonical/Ubuntu, KDE or Google, and is not endorsed by them.
   "Linux Mint" is a trademark of Linux Mint; "Ubuntu" is a trademark of Canonical Ltd.; "KDE" and "Plasma" are trademarks of KDE e.V.; "Google Chrome" is a trademark of Google LLC. The PoliNetwork name and logo belong to PoliNetwork.
 - Included software remains under its own licenses, including: WeBeep Sync (GPL-3.0), WhiteSur icon theme (GPL-3.0), Plymouth-based boot theme (GPL-2.0+), PyQt5 used by PoliOS Welcome (GPL-3.0). Proprietary software (for example Vivado, Google Chrome) is not redistributed in the ISO.
 - The `cachain_geant_harica.pem` certificate (public certificate chain for the Politecnico Wi-Fi) is included.
