@@ -100,7 +100,7 @@ Dispositivo: _Thinkpad T14 Gen 1 20S1 con macOS Sonoma 14.7.1_ · Le prestazioni
 
 ## Download e installazione
 
-1. Scarica l'ultima ISO: **[link](https://pub-37dc79b217854c9094cb9505dc29cca7.r2.dev/v1.0.0/PoliOS-26_64bit.iso)** (circa 3,4 GB). Controlla la somma di controllo SHA-256: `88804f233078954519ba87cbe79d96439e3e8a6010fb4358a7ff7707c015c056`.
+1. Scarica l'ultima ISO: **[link](https://pub-37dc79b217854c9094cb9505dc29cca7.r2.dev/v1.0.0/PoliOS-26_64bit.iso)** (circa 3,4 GB). Controlla la somma di controllo SHA-256: `07073bc0d47980676335b87f07c536b1d19c2b695edd52e30d9d31217d609250`.
    *(L'ISO supera il limite di 2 GiB di GitHub Releases: è ospitata su CloudFlare. In ogni release trovi link e checksum.)*
 2. Segui la guida passo passo: **[docs/INSTALL.md](docs/INSTALL.md)**.
 
@@ -240,7 +240,7 @@ Device: ThinkPad T14 Gen 1 running macOS Sonoma 14.7.1 · YMMV.
 
 ## Download and install
 
-1. Download the latest ISO: **[link](https://pub-37dc79b217854c9094cb9505dc29cca7.r2.dev/v1.0.0/PoliOS-26_64bit.iso)** (about 3,4 GB). Check the SHA-256 checksum: `88804f233078954519ba87cbe79d96439e3e8a6010fb4358a7ff7707c015c056`.
+1. Download the latest ISO: **[link](https://pub-37dc79b217854c9094cb9505dc29cca7.r2.dev/v1.0.0/PoliOS-26_64bit.iso)** (about 3,4 GB). Check the SHA-256 checksum: `07073bc0d47980676335b87f07c536b1d19c2b695edd52e30d9d31217d609250`.
    *(The ISO exceeds GitHub Releases' 2 GiB limit, so it is hosted on Cloudflare. Each release has the link and checksum.)*
 2. Follow the step-by-step guide: **[docs/INSTALL.md](docs/INSTALL.md)**.
 
