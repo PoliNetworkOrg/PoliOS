@@ -8,6 +8,9 @@
 
 > ⚠️  · 🇮🇹 Nonostante sia una versione stabile, potrebbe avere difetti. · 🇬🇧 Even though it's a stable release, expect rough edges.
 
+
+## [Clicca qui per il Download · Click here to Download](https://pub-37dc79b217854c9094cb9505dc29cca7.r2.dev/v1.0.0/PoliOS-26_64bit.iso)
+
 ![Neofetch on Desktop](docs/images/Neofetch.png) 
 
 </div>
@@ -67,11 +70,11 @@ Software proprietario come Vivado **non** è incluso (non è ridistribuibile). A
 ### Ancora da verificare
 
 <!-- TODO: aggiornare questa lista man mano che le cose vengono verificate! -->
-- Configurazione Wi-Fi `polimi-protected` su una rete reale
+- Niente!
 
 ### Limitazioni note
 
-- **Solo amd64**. Su Mac Apple Silicon e iPad, UTM può solo *emulare* l'immagine: funziona eh, è molto lenta.
+- **Solo amd64**. Su Mac Apple Silicon e iPad, UTM può solo *emulare* l'immagine: funziona eh, ma è molto lenta.
 - **Plasma 5.27 e sessione X11** (è la versione di Ubuntu 24.04, base di Mint 22.3).
 - Alcune app di Linux Mint (GTK) restano nel sistema e potrebbero non seguire il tema di KDE.
 
@@ -205,7 +208,7 @@ Proprietary software such as Vivado is **not** included (it can't be redistribut
 ### Still to be verified
 
 <!-- TODO: keep this list in sync with the Italian one -->
-- `polimi-protected` Wi-Fi setup on a real network
+- Nothing!
 
 ### Known limitations
 
